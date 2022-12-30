@@ -37,7 +37,7 @@ android {
         compose true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion compose_ui_version
+        kotlinCompilerExtensionVersion = "1.3.2"
     }
     packagingOptions {
         resources {
@@ -49,7 +49,9 @@ android {
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.9.0'
-    implementation 'androidx.activity:activity-compose:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'androidx.activity:activity-compose:1.6.1'
+    implementation 'com.google.android.material:material:1.7.0'
 
     // Lifecycle
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.5.1'
@@ -61,24 +63,22 @@ dependencies {
     implementation "androidx.compose.material:material-icons-extended:$compose_ui_version"
     implementation "androidx.compose.runtime:runtime:$compose_ui_version"
 
+    // Util Functions of Jetpack Compose
+    implementation "androidx.compose.ui:ui-util:1.4.0-alpha03"
+
     // Jetpack Compose Constraint Layout
     implementation "androidx.constraintlayout:constraintlayout-compose:1.0.1"
 
-    def nav_compose_version = "2.5.2"
+    def nav_compose_version = "2.5.3"
     implementation "androidx.navigation:navigation-compose:$nav_compose_version"
 
     // Coil
     implementation("io.coil-kt:coil-compose:2.1.0")
 
-    def accompanist_version = "0.25.0"
+    def accompanist_version = "0.27.0"
     // Accompanist
-    implementation "com.google.accompanist:accompanist-insets:$accompanist_version"
     implementation "com.google.accompanist:accompanist-systemuicontroller:$accompanist_version"
-    implementation "com.google.accompanist:accompanist-pager:$accompanist_version"
     implementation "com.google.accompanist:accompanist-drawablepainter:$accompanist_version"
-
-    // If using indicators, also depend on
-    implementation "com.google.accompanist:accompanist-pager-indicators:$accompanist_version"
 
     // Coil Accompanist
     implementation 'dev.chrisbanes.accompanist:accompanist-coil:0.6.2'
