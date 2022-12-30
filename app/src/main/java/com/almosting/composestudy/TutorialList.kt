@@ -7,6 +7,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.res.stringResource
 import com.almosting.composestudy.chapter1.Tutorial1_1Screen
+import com.almosting.composestudy.chapter1.Tutorial1_2Screen
 import com.almosting.composestudy.model.TutorialSectionModel
 
 /**
@@ -42,8 +43,25 @@ fun createComponentTutorialList(onBack: () -> Unit): List<TutorialSectionModel> 
         )
     )
 
+    val tutorial1_2 = TutorialSectionModel(
+        title = stringResource(R.string.title1_2),
+        description = "Create and modify Surface to draw background for Composables," +
+                " add click action to any composable. Set weight or offset modifiers.",
+        action = {
+            Tutorial1_2Screen()
+        },
+        tags = listOf(
+            TAG_COMPOSE,
+            TAG_COMPOSE_MODIFIER,
+            TAG_COMPOSE_SURFACE,
+            TAG_COMPOSE_SHAPE,
+            TAG_COMPOSE_CLICKABLE
+        )
+    )
+
     return listOf(
-        tutorial1_1
+        tutorial1_1,
+        tutorial1_2
     )
 }
 
