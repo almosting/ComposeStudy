@@ -8,6 +8,7 @@ import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.res.stringResource
 import com.almosting.composestudy.chapter1.Tutorial1_1Screen
 import com.almosting.composestudy.chapter1.Tutorial1_2Screen
+import com.almosting.composestudy.chapter2.Tutorial2_1Screen
 import com.almosting.composestudy.model.TutorialSectionModel
 
 /**
@@ -59,9 +60,26 @@ fun createComponentTutorialList(onBack: () -> Unit): List<TutorialSectionModel> 
         )
     )
 
+    val tutorial2_1 = TutorialSectionModel(
+        title = stringResource(R.string.title2_1),
+        description = "Create Text component with different properties such as " +
+                "color, background, font weight, family, style, spacing and others.",
+        action = {
+            Tutorial2_1Screen()
+        },
+        tags = listOf(
+            TAG_COMPOSE,
+            TAG_TEXT,
+            TAG_FONT_STYLE,
+            TAG_ANNOTATED_STRING,
+            TAG_HYPERLINK
+        )
+    )
+
     return listOf(
         tutorial1_1,
-        tutorial1_2
+        tutorial1_2,
+        tutorial2_1
     )
 }
 
