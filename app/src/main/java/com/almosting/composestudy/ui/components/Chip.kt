@@ -18,7 +18,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.almosting.composestudy.R
@@ -208,33 +207,25 @@ fun CircleCloseButton(modifier: Modifier = Modifier) {
 }
 
 @Composable
-@Preview
 @Preview("dark", uiMode = Configuration.UI_MODE_NIGHT_YES)
-@Preview(device = Devices.PIXEL_C)
 private fun TutorialChipReview() {
     TutorialChip(text = "Tutorial Chip")
 }
 
 @Composable
-@Preview
 @Preview("dark", uiMode = Configuration.UI_MODE_NIGHT_YES)
-@Preview(device = Devices.PIXEL_C)
 private fun ChipPreview() {
     Chip(text = "Chip", drawableRes = R.drawable.avatar_1_raster, cancelable = true)
 }
 
 @Composable
-@Preview
 @Preview("dark", uiMode = Configuration.UI_MODE_NIGHT_YES)
-@Preview(device = Devices.PIXEL_C)
 private fun SuggestionChipReview() {
     CancelableChip(suggestion = SuggestionModel("Suggestion"))
 }
 
 @Composable
-@Preview
 @Preview("dark", uiMode = Configuration.UI_MODE_NIGHT_YES)
-@Preview(device = Devices.PIXEL_C)
 private fun SuggestionChipWithIconReview() {
     CancelableChip(
         suggestion = SuggestionModel("Suggestion"),
@@ -243,9 +234,7 @@ private fun SuggestionChipWithIconReview() {
 }
 
 @Composable
-@Preview
 @Preview("dark", uiMode = Configuration.UI_MODE_NIGHT_YES)
-@Preview(device = Devices.PIXEL_C)
 private fun OutlinedChipPreview() {
     OutlinedChip(text = "Outlined", drawableRes = R.drawable.avatar_2_raster, closable = true)
 
