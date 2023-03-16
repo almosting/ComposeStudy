@@ -26,6 +26,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.fwrite.composestudy.R
 import com.fwrite.composestudy.ui.theme.backgroundColor
 
 @ExperimentalMaterialApi

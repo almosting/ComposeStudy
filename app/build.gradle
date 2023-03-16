@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.almosting.composestudy'
+    namespace 'com.fwrite.composestudy'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.almosting.composestudy"
+        applicationId "com.fwrite.composestudy"
         minSdk 21
         targetSdk 33
         versionCode 1
