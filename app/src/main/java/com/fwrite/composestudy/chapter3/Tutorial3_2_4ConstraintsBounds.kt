@@ -14,6 +14,7 @@ import androidx.compose.ui.layout.Layout
 import androidx.compose.ui.layout.Measurable
 import androidx.compose.ui.layout.Placeable
 import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Constraints
 import androidx.compose.ui.unit.dp
 import com.fwrite.composestudy.ui.components.StyleableTutorialText
@@ -457,4 +458,10 @@ private fun LayoutWithWidthParams(
             }
         }
     }
+}
+
+@Preview
+@Composable
+private fun Tutorial3_2_4Preview() {
+    TutorialContent()
 }

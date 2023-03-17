@@ -19,6 +19,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.imageResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -559,4 +560,10 @@ fun NativeCanvasSample2() {
             }
         )
     }
+}
+
+@Preview
+@Composable
+private fun Tutorial6_2Preview() {
+    TutorialContent()
 }

@@ -19,6 +19,7 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.fwrite.composestudy.R
 import com.fwrite.composestudy.ui.components.StyleableTutorialText
@@ -322,3 +323,10 @@ fun Offset.rotateBy(angle: Float): Offset {
 }
 
 private const val PI = Math.PI
+
+
+@Preview
+@Composable
+private fun Tutorial5_3Preview() {
+    TutorialContent()
+}

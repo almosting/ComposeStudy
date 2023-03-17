@@ -16,6 +16,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.fwrite.composestudy.ui.components.StyleableTutorialText
 import com.fwrite.composestudy.ui.components.getRandomColor
@@ -533,4 +534,10 @@ private fun AnotherComposable(update: Int) {
             )
         }
     }
+}
+
+@Preview
+@Composable
+private fun Tutorial4_2_2Preview() {
+    TutorialContent()
 }

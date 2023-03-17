@@ -12,6 +12,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
@@ -519,4 +520,10 @@ private fun BoxWithConstraintsSample4() {
             color = Color.White
         )
     }
+}
+
+@Preview
+@Composable
+private fun Tutorial3_4Preview() {
+    TutorialContent()
 }

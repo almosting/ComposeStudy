@@ -17,6 +17,7 @@ import androidx.compose.ui.input.nestedscroll.NestedScrollConnection
 import androidx.compose.ui.input.nestedscroll.NestedScrollDispatcher
 import androidx.compose.ui.input.nestedscroll.NestedScrollSource
 import androidx.compose.ui.input.nestedscroll.nestedScroll
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.fwrite.composestudy.ui.theme.Blue400
 import com.fwrite.composestudy.ui.theme.Pink400
@@ -176,4 +177,10 @@ private fun Draggable() {
             modifier = Modifier.align(Alignment.Center)
         )
     }
+}
+
+@Preview
+@Composable
+private fun Tutorial5_9_5Preview() {
+    TutorialContent()
 }

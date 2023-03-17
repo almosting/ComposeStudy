@@ -17,6 +17,7 @@ import androidx.compose.ui.input.nestedscroll.NestedScrollConnection
 import androidx.compose.ui.input.nestedscroll.NestedScrollSource
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -108,4 +109,10 @@ private fun NestedScrollExample() {
             backgroundColor = Color.White,
             title = { Text("toolbar offset is ${toolbarOffsetHeightPx.value}") })
     }
+}
+
+@Preview
+@Composable
+private fun Tutorial5_9_4Preview() {
+    TutorialContent()
 }

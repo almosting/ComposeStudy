@@ -17,6 +17,7 @@ import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.*
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.zIndex
@@ -580,3 +581,8 @@ private fun TransformOriginExample() {
 
 private fun Float.round2Digits() = (this * 100).roundToInt() / 100f
 
+@Preview
+@Composable
+private fun Tutorial3_1_3Preview() {
+    TutorialContent()
+}

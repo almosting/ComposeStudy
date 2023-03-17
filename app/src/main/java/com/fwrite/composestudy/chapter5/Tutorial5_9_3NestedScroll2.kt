@@ -15,6 +15,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.nestedscroll.NestedScrollConnection
 import androidx.compose.ui.input.nestedscroll.NestedScrollSource
 import androidx.compose.ui.input.nestedscroll.nestedScroll
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Velocity
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -157,4 +158,10 @@ private fun ColumnScope.NestedScrollExample() {
         fontSize = 16.sp,
         color = Color.White
     )
+}
+
+@Preview
+@Composable
+private fun Tutorial5_9_3Preview() {
+    TutorialContent()
 }

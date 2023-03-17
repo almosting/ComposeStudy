@@ -254,3 +254,9 @@ private fun ShimmerIconSample() {
     )
 }
 
+@Preview
+@Composable
+private fun Tutorial6_2Preview() {
+    TutorialContent()
+}
+

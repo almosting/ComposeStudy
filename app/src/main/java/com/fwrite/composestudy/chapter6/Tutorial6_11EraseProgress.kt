@@ -18,6 +18,7 @@ import androidx.compose.ui.graphics.*
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.imageResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -297,4 +298,10 @@ private fun compareBitmaps(
     }
 
     return 100f * match / size
+}
+
+@Preview
+@Composable
+private fun Tutorial6_11Preview() {
+    TutorialContent()
 }

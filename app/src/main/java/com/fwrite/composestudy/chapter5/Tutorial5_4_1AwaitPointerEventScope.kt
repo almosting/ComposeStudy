@@ -21,6 +21,7 @@ import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.input.pointer.positionChange
 import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.toSize
@@ -430,3 +431,9 @@ private fun AwaitDragOrCancellationExample() {
     }
 }
 
+
+@Preview
+@Composable
+private fun Tutorial5_4_1Preview() {
+    TutorialContent()
+}

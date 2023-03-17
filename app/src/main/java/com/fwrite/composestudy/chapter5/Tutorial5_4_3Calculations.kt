@@ -16,6 +16,7 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.input.pointer.PointerEvent
 import androidx.compose.ui.input.pointer.PointerInputChange
 import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import com.fwrite.composestudy.R
@@ -269,4 +270,11 @@ private fun CalculateRotationExample() {
         .fillMaxWidth()
 
     ImageBox(boxModifier, imageModifier, R.drawable.landscape2, text, Green400)
+}
+
+
+@Preview
+@Composable
+private fun Tutorial5_4_3Preview() {
+    TutorialContent()
 }

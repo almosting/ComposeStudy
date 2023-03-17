@@ -18,6 +18,7 @@ import androidx.compose.ui.graphics.nativeCanvas
 import androidx.compose.ui.layout.*
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.platform.debugInspectorInfo
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.*
 import com.fwrite.composestudy.ui.components.StyleableTutorialText
 import com.fwrite.composestudy.ui.components.TutorialHeader
@@ -326,4 +327,10 @@ fun Modifier.drawOffscreen(): Modifier = this.drawWithContent {
         drawContent()
         restoreToCount(checkPoint)
     }
+}
+
+@Preview
+@Composable
+private fun Tutorial3_1_1Preview() {
+    TutorialContent()
 }

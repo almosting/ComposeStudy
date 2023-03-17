@@ -21,6 +21,7 @@ import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.fwrite.composestudy.ui.components.StyleableTutorialText
@@ -291,4 +292,10 @@ private fun ElasticComposable(
     ) {
         content()
     }
+}
+
+@Preview
+@Composable
+private fun Tutorial5_1_2Preview() {
+    TutorialContent()
 }

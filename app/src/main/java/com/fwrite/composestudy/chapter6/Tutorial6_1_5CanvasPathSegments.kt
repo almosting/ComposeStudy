@@ -16,6 +16,7 @@ import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.core.graphics.PathSegment
@@ -841,3 +842,9 @@ private val canvasModifier = Modifier
     .background(Color.White)
     .fillMaxSize()
     .height(200.dp)
+
+@Preview
+@Composable
+private fun Tutorial6_1_5Preview() {
+    TutorialContent()
+}

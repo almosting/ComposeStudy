@@ -20,6 +20,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
@@ -340,4 +341,10 @@ fun Path.roundedRectanglePath(
 
     lineTo(x = 0f, y = cornerRadius)
     close()
+}
+
+@Preview
+@Composable
+private fun Tutorial6_8Preview() {
+    TutorialContent()
 }

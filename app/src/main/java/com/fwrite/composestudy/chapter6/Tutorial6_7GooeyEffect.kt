@@ -19,6 +19,7 @@ import androidx.compose.ui.graphics.*
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.graphics.drawscope.translate
 import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.fwrite.composestudy.ui.components.StyleableTutorialText
 import com.fwrite.composestudy.ui.theme.backgroundColor
@@ -211,4 +212,10 @@ private fun GooeyEffectSample2() {
             )
         }
     }
+}
+
+@Preview
+@Composable
+private fun Tutorial6_7Preview() {
+    TutorialContent()
 }

@@ -22,6 +22,7 @@ import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.graphics.nativeCanvas
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.input.pointer.*
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.fwrite.composestudy.chapter5.gesture.MotionEvent
 import com.fwrite.composestudy.ui.components.StyleableTutorialText
@@ -449,3 +450,9 @@ private val gestureTextModifier = Modifier
     .background(BlueGrey400)
     .height(120.dp)
     .padding(2.dp)
+
+@Preview
+@Composable
+private fun Tutorial6_4_0Preview() {
+    TutorialContent()
+}

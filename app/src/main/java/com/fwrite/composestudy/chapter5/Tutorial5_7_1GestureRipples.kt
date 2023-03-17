@@ -15,6 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.fwrite.composestudy.ui.components.StyleableTutorialText
 import kotlinx.coroutines.launch
@@ -134,4 +135,10 @@ private fun AwaitPointerEventScopeIndicationSample() {
     Column(modifier = Modifier.fillMaxWidth()) {
         GestureDisplayBox(pointerModifier, gestureText)
     }
+}
+
+@Preview
+@Composable
+private fun Tutorial5_7_1Preview() {
+    TutorialContent()
 }

@@ -12,6 +12,7 @@ import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.layout.positionInParent
 import androidx.compose.ui.layout.positionInRoot
 import androidx.compose.ui.layout.positionInWindow
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.fwrite.composestudy.ui.components.StyleableTutorialText
 
@@ -62,4 +63,10 @@ private fun MyComposable() {
     ) {
         Text(text = text)
     }
+}
+
+@Preview
+@Composable
+private fun Tutorial3_1_2Preview() {
+    TutorialContent()
 }

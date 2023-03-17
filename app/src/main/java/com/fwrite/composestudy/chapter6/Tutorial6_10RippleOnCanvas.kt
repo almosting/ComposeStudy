@@ -16,6 +16,7 @@ import androidx.compose.ui.geometry.*
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.PointerInputChange
 import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.launch
 
@@ -156,4 +157,10 @@ private fun RippleOnCanvasSample() {
         }
 //        }
     }
+}
+
+@Preview
+@Composable
+private fun Tutorial6_10Preview() {
+    TutorialContent()
 }

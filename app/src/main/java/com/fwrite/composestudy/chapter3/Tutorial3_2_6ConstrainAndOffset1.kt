@@ -11,6 +11,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Constraints
 import androidx.compose.ui.unit.constrainWidth
 import androidx.compose.ui.unit.dp
@@ -144,3 +145,10 @@ private fun CustomPaddingSamples(message: String) {
         )
     }
 }
+
+@Preview
+@Composable
+private fun Tutorial3_2_6Preview() {
+    TutorialContent()
+}
+

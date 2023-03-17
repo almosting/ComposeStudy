@@ -21,6 +21,7 @@ import androidx.compose.ui.input.pointer.*
 import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -1070,3 +1071,9 @@ private val gestureTextModifier = Modifier
     .background(BlueGrey400)
     .height(250.dp)
     .padding(2.dp)
+
+@Preview
+@Composable
+private fun Tutorial5_6_3Preview() {
+    TutorialContent()
+}

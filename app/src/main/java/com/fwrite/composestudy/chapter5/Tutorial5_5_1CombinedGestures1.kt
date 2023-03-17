@@ -15,6 +15,7 @@ import androidx.compose.ui.input.pointer.PointerEvent
 import androidx.compose.ui.input.pointer.PointerInputChange
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.fwrite.composestudy.ui.components.StyleableTutorialText
 import com.fwrite.composestudy.ui.theme.*
@@ -284,4 +285,11 @@ private fun CombinedPointerInputSample2() {
     Column(modifier = Modifier.fillMaxWidth()) {
         GestureDisplayBox(pointerModifier, gestureText)
     }
+}
+
+
+@Preview
+@Composable
+private fun Tutorial5_5_1Preview() {
+    TutorialContent()
 }

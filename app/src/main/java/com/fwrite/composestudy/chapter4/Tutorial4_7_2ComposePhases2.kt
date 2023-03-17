@@ -14,6 +14,7 @@ import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.Placeable
 import androidx.compose.ui.layout.layout
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -205,4 +206,10 @@ private fun MyBox(modifier: Modifier, title: String) {
             fontSize = 10.sp
         )
     }
+}
+
+@Preview
+@Composable
+private fun Tutorial4_7_2Preview() {
+    TutorialContent()
 }

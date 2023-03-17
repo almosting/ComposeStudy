@@ -9,6 +9,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -89,4 +90,10 @@ private fun TutorialContent() {
             color = Color.White
         )
     }
+}
+
+@Preview
+@Composable
+private fun Tutorial5_8_1Preview() {
+    TutorialContent()
 }

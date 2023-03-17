@@ -16,6 +16,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.TransformOrigin
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.input.pointer.*
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.fwrite.composestudy.R
 import com.fwrite.composestudy.chapter2.CheckBoxWithTextRippleFullRow
@@ -609,3 +610,9 @@ private val containerModifier = Modifier
 private val imageModifier = Modifier
     .height(200.dp)
     .fillMaxWidth()
+
+@Preview
+@Composable
+private fun Tutorial5_6_4Preview() {
+    TutorialContent()
+}

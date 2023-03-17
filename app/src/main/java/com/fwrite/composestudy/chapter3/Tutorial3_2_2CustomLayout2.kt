@@ -9,6 +9,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.*
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Constraints
 import androidx.compose.ui.unit.dp
 import com.fwrite.composestudy.ui.components.StyleableTutorialText
@@ -292,4 +293,10 @@ fun CustomColumnWithIntrinsicDimensions(
     }
 
     Layout(modifier = modifier, content = content, measurePolicy = measurePolicy)
+}
+
+@Preview
+@Composable
+private fun Tutorial3_2_2Preview() {
+    TutorialContent()
 }

@@ -8,6 +8,7 @@ import androidx.compose.material.icons.filled.Remove
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.fwrite.composestudy.ui.components.StyleableTutorialText
 
@@ -124,5 +125,11 @@ private fun RememberMultipleKeysExample() {
 
         }
     }
+}
+
+@Preview
+@Composable
+private fun Tutorial4_3Preview() {
+    TutorialContent()
 }
 

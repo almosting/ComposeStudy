@@ -19,6 +19,7 @@ import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.res.imageResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
@@ -408,3 +409,9 @@ private val canvasModifier = Modifier
     .background(Color.White)
     .fillMaxWidth()
     .height(200.dp)
+
+@Preview
+@Composable
+private fun Tutorial6_1_2Preview() {
+    TutorialContent()
+}

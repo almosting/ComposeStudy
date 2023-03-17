@@ -19,6 +19,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.imageResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.toSize
 import com.fwrite.composestudy.R
@@ -118,4 +119,10 @@ private fun TouchOnImageExample() {
             )
             .size(100.dp)
     )
+}
+
+@Preview
+@Composable
+private fun Tutorial5_10_1Preview() {
+    TutorialContent()
 }

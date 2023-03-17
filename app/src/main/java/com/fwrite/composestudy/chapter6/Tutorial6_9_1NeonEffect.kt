@@ -17,6 +17,7 @@ import androidx.compose.ui.graphics.*
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.graphics.drawscope.drawIntoCanvas
 import androidx.compose.ui.input.pointer.PointerInputChange
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.fwrite.composestudy.chapter5.gesture.MotionEvent
 import com.fwrite.composestudy.chapter5.gesture.pointerMotionEvents
@@ -278,5 +279,11 @@ private fun NeonDrawingSample() {
             )
         }
     }
+}
+
+@Preview
+@Composable
+private fun Tutorial6_9Preview() {
+    TutorialContent()
 }
 

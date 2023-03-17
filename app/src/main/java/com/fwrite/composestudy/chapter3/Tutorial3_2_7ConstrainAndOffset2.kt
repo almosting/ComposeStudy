@@ -17,6 +17,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.layout.*
 import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.*
 import com.fwrite.composestudy.ui.components.StyleableTutorialText
 
@@ -485,4 +486,10 @@ private data class CustomRect(
         return "left: $left, top: $top, right: $right, bottom: $bottom, " +
                 "width: $width, height: $height"
     }
+}
+
+@Preview
+@Composable
+private fun Tutorial3_2_7Preview() {
+    TutorialContent()
 }

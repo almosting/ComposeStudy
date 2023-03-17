@@ -29,6 +29,7 @@ import androidx.compose.ui.input.pointer.positionChange
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.imageResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -1117,6 +1118,12 @@ private fun DrawScope.drawText(text: String, x: Float, y: Float, paint: Paint) {
     lines.indices.withIndex().forEach { (posY, i) ->
         nativeCanvas.drawText(lines[i], x, posY * 40 + y, paint)
     }
+}
+
+@Preview
+@Composable
+private fun Tutorial6_4_1Preview() {
+    TutorialContent()
 }
 
 

@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.fwrite.composestudy.chapter2.ChatAppbar
 import com.fwrite.composestudy.chapter3.chat.ChatInput
@@ -157,4 +158,10 @@ private fun MessageRow(
             }
         }
     )
+}
+
+@Preview
+@Composable
+private fun Tutorial3_6_1Preview() {
+    TutorialContent()
 }

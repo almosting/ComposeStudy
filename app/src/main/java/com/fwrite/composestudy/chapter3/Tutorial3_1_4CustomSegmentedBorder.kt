@@ -18,6 +18,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import com.fwrite.composestudy.ui.components.StyleableTutorialText
@@ -386,4 +387,10 @@ fun Modifier.segmentedClip(
         Modifier.clip(shape)
     }
 )
+
+@Preview
+@Composable
+private fun Tutorial3_1_4Preview() {
+    TutorialContent()
+}
 
