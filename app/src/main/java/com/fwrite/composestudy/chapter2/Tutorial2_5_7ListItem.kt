@@ -12,6 +12,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.fwrite.composestudy.ui.components.TutorialHeader
 import com.fwrite.composestudy.ui.components.TutorialText2
@@ -291,4 +292,11 @@ private fun CombinedListItemExample() {
         )
         Divider()
     }
+}
+
+@OptIn(ExperimentalMaterialApi::class)
+@Preview
+@Composable
+private fun Tutorial2_5_7Preview() {
+    TutorialContent()
 }

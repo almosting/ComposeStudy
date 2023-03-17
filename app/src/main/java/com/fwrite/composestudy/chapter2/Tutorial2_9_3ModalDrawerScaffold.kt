@@ -7,6 +7,7 @@ import androidx.compose.foundation.shape.CutCornerShape
 import androidx.compose.material.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.launch
 
@@ -62,4 +63,11 @@ private fun ModalDrawerComponent() {
         )
     }
 
+}
+
+@OptIn(ExperimentalMaterialApi::class)
+@Preview
+@Composable
+private fun Tutorial2_9_3Preview() {
+    TutorialContent()
 }

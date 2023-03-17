@@ -477,3 +477,9 @@ private fun ChatAppbarActions(
     }
 }
 
+@Preview
+@Composable
+private fun Tutorial2_6_1Preview() {
+    TutorialContent()
+}
+

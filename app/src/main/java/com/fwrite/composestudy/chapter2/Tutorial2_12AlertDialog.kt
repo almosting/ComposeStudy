@@ -19,6 +19,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
@@ -526,3 +527,9 @@ val dialogText = """
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
     printer took a galley of type and scrambled it to make a type specimen book.
 """.trimIndent()
+
+@Preview
+@Composable
+private fun Tutorial2_12Preview() {
+    TutorialContent()
+}

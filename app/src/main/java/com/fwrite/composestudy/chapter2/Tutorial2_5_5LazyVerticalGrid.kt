@@ -8,6 +8,7 @@ import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.fwrite.composestudy.model.Snack
 import com.fwrite.composestudy.model.snacks
@@ -33,4 +34,10 @@ private fun TutorialContent() {
             }
         }
     )
+}
+
+@Preview
+@Composable
+private fun Tutorial2_5_5Preview() {
+    TutorialContent()
 }

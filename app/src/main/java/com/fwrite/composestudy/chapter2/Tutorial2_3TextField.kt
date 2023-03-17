@@ -29,6 +29,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.*
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.fwrite.composestudy.ui.components.StyleableTutorialText
 import com.fwrite.composestudy.ui.components.TutorialHeader
@@ -635,4 +636,11 @@ fun creditCardFilter(text: AnnotatedString): TransformedText {
     }
 
     return TransformedText(AnnotatedString(out), creditCardOffsetTranslator)
+}
+
+@OptIn(ExperimentalComposeUiApi::class)
+@Preview
+@Composable
+private fun Tutorial2_3Preview() {
+    TutorialContent()
 }

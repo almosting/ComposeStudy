@@ -15,6 +15,7 @@ import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.fwrite.composestudy.model.Snack
 import com.fwrite.composestudy.model.snacks
@@ -97,4 +98,10 @@ private fun TutorialContent() {
             }
         }
     }
+}
+
+@Preview
+@Composable
+private fun Tutorial2_5_2Preview() {
+    TutorialContent()
 }

@@ -10,6 +10,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.launch
 
@@ -81,4 +82,10 @@ private fun TutorialContent() {
             }
         )
     }
+}
+
+@Preview
+@Composable
+private fun Tutorial2_10_3Preview() {
+    TutorialContent()
 }

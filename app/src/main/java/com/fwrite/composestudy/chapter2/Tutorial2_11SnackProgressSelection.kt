@@ -20,6 +20,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.state.ToggleableState
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.fwrite.composestudy.ui.components.StyleableTutorialText
@@ -581,4 +582,11 @@ private val progressFlow by lazy {
             delay(50)
         }
     }
+}
+
+@OptIn(ExperimentalMaterialApi::class)
+@Preview
+@Composable
+private fun Tutorial2_11Preview() {
+    TutorialContent()
 }

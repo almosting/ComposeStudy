@@ -28,6 +28,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.imageResource
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.LayoutDirection
@@ -773,4 +774,8 @@ private val triangleShape = GenericShape { size: Size, _: LayoutDirection ->
     addPath(path = path)
 }
 
-
+@Preview
+@Composable
+private fun Tutorial2_4Preview() {
+    TutorialContent()
+}

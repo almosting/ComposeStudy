@@ -12,6 +12,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.fwrite.composestudy.ui.components.StyleableTutorialText
@@ -125,4 +126,10 @@ private fun TutorialContent() {
 
         Text(text)
     }
+}
+
+@Preview
+@Composable
+private fun Tutorial2_5_8Preview() {
+    TutorialContent()
 }

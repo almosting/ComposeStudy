@@ -1,6 +1,5 @@
 package com.fwrite.composestudy.chapter2
 
-import android.content.res.Configuration
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -16,7 +15,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -173,8 +171,6 @@ private fun SheetContent() {
 @ExperimentalAnimationApi
 @ExperimentalMaterialApi
 @Preview
-@Preview("dark", uiMode = Configuration.UI_MODE_NIGHT_YES)
-@Preview(device = Devices.PIXEL_C)
 @Composable
 private fun FloatingActionButtonComponentPreview() {
 
@@ -190,8 +186,6 @@ private fun FloatingActionButtonComponentPreview() {
 @ExperimentalAnimationApi
 @ExperimentalMaterialApi
 @Preview
-@Preview("dark", uiMode = Configuration.UI_MODE_NIGHT_YES)
-@Preview(device = Devices.PIXEL_C)
 @Composable
 private fun TutorialContentPreview() {
     ComposeStudyTheme {
@@ -202,8 +196,6 @@ private fun TutorialContentPreview() {
 @ExperimentalAnimationApi
 @ExperimentalMaterialApi
 @Preview
-@Preview("dark", uiMode = Configuration.UI_MODE_NIGHT_YES)
-@Preview(device = Devices.PIXEL_C)
 @Composable
 private fun MainContentPreview() {
 
@@ -219,8 +211,6 @@ private fun MainContentPreview() {
 @ExperimentalAnimationApi
 @ExperimentalMaterialApi
 @Preview
-@Preview("dark", uiMode = Configuration.UI_MODE_NIGHT_YES)
-@Preview(device = Devices.PIXEL_C)
 @Composable
 private fun SheetContentPreview() {
     ComposeStudyTheme {

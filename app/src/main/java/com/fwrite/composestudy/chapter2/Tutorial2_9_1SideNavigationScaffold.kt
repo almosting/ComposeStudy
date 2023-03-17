@@ -1,7 +1,6 @@
 package com.fwrite.composestudy.chapter2
 
 import android.annotation.SuppressLint
-import android.content.res.Configuration
 import android.widget.Toast
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -23,7 +22,6 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -177,8 +175,6 @@ fun AppDrawer(
 }
 
 @Preview
-@Preview("dark", uiMode = Configuration.UI_MODE_NIGHT_YES)
-@Preview(device = Devices.PIXEL_C)
 @Composable
 private fun AppDrawerPreview() {
     ComposeStudyTheme {
@@ -220,8 +216,6 @@ private fun DrawerHeader() {
 }
 
 @Preview
-@Preview("dark", uiMode = Configuration.UI_MODE_NIGHT_YES)
-@Preview(device = Devices.PIXEL_C)
 @Composable
 private fun DrawerHeaderPreview() {
     ComposeStudyTheme {
@@ -231,8 +225,6 @@ private fun DrawerHeaderPreview() {
 
 
 @Preview
-@Preview("dark", uiMode = Configuration.UI_MODE_NIGHT_YES)
-@Preview(device = Devices.PIXEL_C)
 @Composable
 private fun DrawerButtonPreview() {
     ComposeStudyTheme {
@@ -260,8 +252,6 @@ fun HomeComponent() {
 }
 
 @Preview
-@Preview("dark", uiMode = Configuration.UI_MODE_NIGHT_YES)
-@Preview(device = Devices.PIXEL_C)
 @Composable
 private fun HomeComponentPreview() {
     ComposeStudyTheme {
@@ -282,8 +272,6 @@ fun SettingsComponent() {
 }
 
 @Preview
-@Preview("dark", uiMode = Configuration.UI_MODE_NIGHT_YES)
-@Preview(device = Devices.PIXEL_C)
 @Composable
 private fun SettingsComponentPreview() {
     ComposeStudyTheme {
