@@ -1,7 +1,6 @@
 package com.fwrite.composestudy.ui.components
 
 import android.annotation.SuppressLint
-import android.content.res.Configuration
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -20,7 +19,6 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -201,8 +199,6 @@ fun FavoriteButton(
 }
 
 @Preview
-@Preview("dark", uiMode = Configuration.UI_MODE_NIGHT_YES)
-@Preview(device = Devices.PIXEL_C)
 @Composable
 fun SnackCardPreview() {
     val snack = snacks.first()
@@ -210,8 +206,6 @@ fun SnackCardPreview() {
 }
 
 @Preview
-@Preview("dark", uiMode = Configuration.UI_MODE_NIGHT_YES)
-@Preview(device = Devices.PIXEL_C)
 @Composable
 fun HorizontalSnackCardPreview() {
     val snack = snacks.first()
@@ -219,8 +213,6 @@ fun HorizontalSnackCardPreview() {
 }
 
 @Preview
-@Preview("dark", uiMode = Configuration.UI_MODE_NIGHT_YES)
-@Preview(device = Devices.PIXEL_C)
 @Composable
 fun FavoriteButtonPreview() {
     FavoriteButton()

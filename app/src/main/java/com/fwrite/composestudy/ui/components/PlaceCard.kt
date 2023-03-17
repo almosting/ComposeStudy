@@ -1,6 +1,5 @@
 package com.fwrite.composestudy.ui.components
 
-import android.content.res.Configuration
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -18,7 +17,6 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
-import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -65,8 +63,6 @@ fun PlaceCard(place: Place) {
 }
 
 @Preview
-@Preview("dark", uiMode = Configuration.UI_MODE_NIGHT_YES)
-@Preview(device = Devices.PIXEL_C)
 @Composable
 private fun PlaceCardPreview() {
     ComposeStudyTheme {
@@ -90,8 +86,6 @@ fun PlacesToBookComponent(place: Place) {
 }
 
 @Preview
-@Preview("dark", uiMode = Configuration.UI_MODE_NIGHT_YES)
-@Preview(device = Devices.PIXEL_C)
 @Composable
 private fun PlacesToBookComponentPreview() {
     ComposeStudyTheme {
@@ -115,8 +109,6 @@ fun PlacesToBookVerticalComponent(place: Place) {
 }
 
 @Preview
-@Preview("dark", uiMode = Configuration.UI_MODE_NIGHT_YES)
-@Preview(device = Devices.PIXEL_C)
 @Composable
 private fun PlacesToBookVerticalComponentPreview() {
     ComposeStudyTheme {
@@ -151,8 +143,6 @@ private fun ImageContent(place: Place) {
 }
 
 @Preview
-@Preview("dark", uiMode = Configuration.UI_MODE_NIGHT_YES)
-@Preview(device = Devices.PIXEL_C)
 @Composable
 private fun ImageContentPreview() {
     ComposeStudyTheme {
@@ -245,8 +235,6 @@ private fun getPlaceProperties(rating: Double): Triple<Color, String, Int> {
 }
 
 @Preview
-@Preview("dark", uiMode = Configuration.UI_MODE_NIGHT_YES)
-@Preview(device = Devices.PIXEL_C)
 @Composable
 private fun PlaceContentPreview() {
     ComposeStudyTheme {
