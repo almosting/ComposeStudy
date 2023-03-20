@@ -25,6 +25,7 @@ import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.TextFieldValue
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
 /**
@@ -177,4 +178,19 @@ private fun SearchHint(modifier: Modifier = Modifier) {
             text = "Search a Tag or Description",
         )
     }
+}
+
+@OptIn(ExperimentalAnimationApi::class, ExperimentalComposeUiApi::class)
+@Preview
+@Composable
+private fun SearchBarPreview() {
+    SearchBar(
+        query = TextFieldValue(""),
+        onQueryChange = {},
+        onSearchFocusChange = {},
+        onClearQuery = {},
+        onBack = {},
+        searching = false,
+        focused = false
+    )
 }
