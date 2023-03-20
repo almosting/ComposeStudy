@@ -236,14 +236,16 @@ fun Modifier.firstBaselineToTop(
     firstBaselineToTop: Dp
 ) = this.then(
     layout { measurable, constraints ->
-
+        // 测量元素
         val placeable = measurable.measure(constraints)
 
         // Check the composable has a first baseline
         check(placeable[FirstBaseline] != AlignmentLine.Unspecified)
+        // 获取元素的基准线
         val firstBaseline = placeable[FirstBaseline]
 
         // Height of the composable with padding - first baseline
+        // 元素新的y坐标 = 新的基准线 - 旧基准线
         val placeableY = firstBaselineToTop.roundToPx() - firstBaseline
         val height = placeable.height + placeableY
         layout(placeable.width, height) {
