@@ -84,16 +84,9 @@ private fun MainContent(
     // 🔥🔥 Don't read from state in recomposition use derivedStateOf instead
     // This is for demonstrating properties modalBottomSheetState
     // Check Tutorial 4-5-2 for derivedStateOf
-    val direction = modalBottomSheetState.direction
     val currentValue: ModalBottomSheetValue = modalBottomSheetState.currentValue
     val targetValue: ModalBottomSheetValue = modalBottomSheetState.targetValue
-    val overflow = modalBottomSheetState.overflow.value
-    val offset = modalBottomSheetState.offset.value
-
-    val progress = modalBottomSheetState.progress
-    val fraction = progress.fraction
-    val from = progress.from.name
-    val to = progress.to.name
+    modalBottomSheetState.isVisible
 
     Column(
         modifier = Modifier
@@ -103,20 +96,8 @@ private fun MainContent(
     ) {
         Text(
             color = Color.White,
-            text = "direction:$direction\n" + "isExpanded: ${modalBottomSheetState.isVisible}\n"
-                    + "isAnimationRunning: ${modalBottomSheetState.isAnimationRunning}"
-        )
-
-        Text(
-            color = Color.White,
             text = "currentValue: ${currentValue}\n" + "targetValue: ${targetValue}\n"
-                    + "overflow: ${overflow}\n" + "offset: $offset"
-        )
-
-        Text(
-            color = Color.White,
-            text = "progress: $progress\n" + "fraction: ${fraction}\n"
-                    + "from: ${from}\n" + "to: $to"
+                    + "isExpanded: ${modalBottomSheetState.isVisible}"
         )
     }
 }

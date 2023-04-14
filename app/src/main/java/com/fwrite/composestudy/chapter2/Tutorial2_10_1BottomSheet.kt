@@ -2,13 +2,28 @@ package com.fwrite.composestudy.chapter2
 
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.*
+import androidx.compose.material.BottomSheetScaffold
+import androidx.compose.material.BottomSheetState
+import androidx.compose.material.BottomSheetValue
+import androidx.compose.material.ExperimentalMaterialApi
+import androidx.compose.material.FabPosition
+import androidx.compose.material.FloatingActionButton
+import androidx.compose.material.Icon
+import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Navigation
+import androidx.compose.material.rememberBottomSheetScaffoldState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
@@ -67,17 +82,9 @@ private fun TutorialContent() {
 @ExperimentalMaterialApi
 @Composable
 private fun MainContent(bottomSheetState: BottomSheetState) {
-
-    val direction = bottomSheetState.direction
     val currentValue: BottomSheetValue = bottomSheetState.currentValue
-    val targetValue: BottomSheetValue = bottomSheetState.targetValue
-    val overflow = bottomSheetState.overflow.value
-    val offset = bottomSheetState.offset.value
-
     val progress = bottomSheetState.progress
-    val fraction = progress.fraction
-    val from = progress.from.name
-    val to = progress.to.name
+    val offset = bottomSheetState.requireOffset()
 
     Column(
         modifier = Modifier
@@ -87,26 +94,19 @@ private fun MainContent(bottomSheetState: BottomSheetState) {
     ) {
         Text(
             color = Color.White,
-            text = "direction:$direction\n" +
-                    "isExpanded: ${bottomSheetState.isExpanded}\n" +
-                    "isCollapsed: ${bottomSheetState.isCollapsed}\n" +
-                    "isAnimationRunning: ${bottomSheetState.isAnimationRunning}"
+            text = "isExpanded: ${bottomSheetState.isExpanded}\n" +
+                    "isCollapsed: ${bottomSheetState.isCollapsed}"
         )
 
         Text(
             color = Color.White,
             text = "currentValue: ${currentValue}\n" +
-                    "targetValue: ${targetValue}\n" +
-                    "overflow: ${overflow}\n" +
                     "offset: $offset"
         )
 
         Text(
             color = Color.White,
-            text = "progress: $progress\n" +
-                    "fraction: ${fraction}\n" +
-                    "from: ${from}\n" +
-                    "to: $to"
+            text = "progress: $progress"
         )
     }
 }
